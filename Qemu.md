@@ -1,4 +1,4 @@
- # Launching a QEMU VM with a custom (self-compiled) kernel
+ # Steps for QEMU VM with custom (self-compiled) kernel
  
  ### Preparing the image file
  
