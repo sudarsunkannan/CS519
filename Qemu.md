@@ -1,5 +1,7 @@
  # Launching a QEMU using a custom compiled kernel
  
+ ### Preparing the image file
+ 
  1. Install Quemu
  ````
  $ sudo apt-get install qemu
@@ -48,3 +50,30 @@ $ sudo debootstrap --arch amd64 "OS_RELEASE_NAME" mountdir
 ````
 $ sudo umount mountdir
 ````
+
+### Compiling the kernel
+
+1. Go to your linux source directory
+````
+$ cd linux_src
+````
+2. Enable the KVM mode in your kernel config file
+````
+make x86_64_defconfig
+make kvmconfig
+````
+3. Compile the kernel with '-j' (denotes parallelism) in sudo mode
+````
+make -j40
+make modules
+make modules_install
+make install
+````
+4. Time to launch your quemu image; the kernel must point to your compiled kernel, hda must point to the quemu disk
+````
+qemu-system-x86_64 -kernel /boot/vmlinuz-VERSION -hda qemu-image.img -append "root=/dev/sda console=ttyS0" --enable-kvm -nographic
+````
+
+
+
+
