@@ -48,7 +48,7 @@ and specify the OS_RELEASE_NAME from the previous command
 $ sudo debootstrap --arch amd64 "OS_RELEASE_NAME" mountdir
 ````
 
-Time to add a new user to the QEMU image; First, change your root directory to your mouted image.
+Time to add a new user to the QEMU image; First, change your root directory to your mounted image.
 ````
 $ sudo chroot mountdir
 ````
@@ -104,7 +104,7 @@ make install
 
 Time to launch your quemu image; the kernel must point to your compiled kernel, hda must point to the quemu disk
 ````
-sudo qemu-system-x86_64 -kernel /boot/vmlinuz-VERSION -hda qemu-image.img -append "root=/dev/sda" --enable-kvm 
+sudo qemu-system-x86_64 -kernel /boot/vmlinuz-VERSION -hda qemu-image.img -append "root=/dev/sda" --enable-kvm --curses
 ````
 QEMU offers different methods to avoid graphics by directly showing console. Figure out these details online :)
 
