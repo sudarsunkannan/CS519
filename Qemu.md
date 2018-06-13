@@ -104,7 +104,7 @@ make install
 
 Time to launch your quemu image; the kernel must point to your compiled kernel, hda must point to the quemu disk
 ````
-sudo qemu-system-x86_64 -kernel /boot/vmlinuz-VERSION -hda qemu-image.img -append "root=/dev/sda" --enable-kvm --curses
+sudo qemu-system-x86_64 -kernel /boot/vmlinuz-VERSION -hda qemu-image.img -append "root=/dev/sda, rw" --enable-kvm --curses
 ````
 QEMU offers different methods to avoid graphics by directly showing console. Figure out these details online :)
 
