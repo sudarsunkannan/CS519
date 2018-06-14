@@ -17,7 +17,9 @@ $ cd linux-4.17/
 * Copy the config file from your computer
 ```
 $ cp /boot/config-4.4.0-116-generic .config`
-$ sudo make -j 40 && sudo make modules_install -j 40 && sudo make install -j 40
+$ sudo make -j 40  
+$ sudo make modules_install -j 40 
+$ sudo make install -j 40
 ```
 
 * Then you want to reboot your computer. 
