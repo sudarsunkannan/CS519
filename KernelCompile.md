@@ -41,3 +41,15 @@ $ uname -r
 ```
 $ vi /boot/grub/grub.cfg
 ```
+
+### Compiling only a directory
+
+Assume you are developing a new file system (NEWFS); You want to quickly compile your NEWFS and check (and fix) if there are some errors; you can use the below command before fully compiling the kernel discussed in the previous steps
+```
+$ make SUBDIRS=fs/NEWFS
+```
+
+
+
+
+
