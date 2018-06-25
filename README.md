@@ -3,8 +3,7 @@
 ### Compiling and launching QEMU 
 
 From the source directory set the environment variables.
-trusty specifies the host systems linux version/codename 
-Pass your own OS version name.
+trusty specifies the host systems linux version/codename; pass your own OS version name.
 
 In scripts/setvars.sh, set the path of your kernel source in
 "export KERN_SRC=KERNELSOURCEPATH
