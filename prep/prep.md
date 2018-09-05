@@ -120,9 +120,9 @@
     (assuming the first printf results in the follow string)
     "1 = 0x7fffdfbf7f00"
 
-> ANSWER: 2 = 
-> ANSWER: 3 = 
-> ANSWER: 4 = 
+> ANSWER: 2 = 			\
+> ANSWER: 3 = 			\
+> ANSWER: 4 = 			\
 
 ## Where does the string, "hello world", reside?
 
