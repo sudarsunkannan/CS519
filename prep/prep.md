@@ -1,8 +1,7 @@
-## CS 519 - C Prep Quiz (Submit as Homework 0)  			
+# CS 519 - C Prep Quiz (Submit as Homework 0)  			
+## Name: 		NetID: 	
 
-# Name: 		NetID: 	
-
-# What is the output of the following code snippet?
+## What is the output of the following code snippet?
 
     uint32_t v = 0xdeadbeef;
     printf("%02x", (char *)v[0]);
@@ -15,7 +14,7 @@
 
 > ANSWER: 
 
-# What is the output of the following code snippet?
+## What is the output of the following code snippet?
 
     int64_t v = 0xdeadbeef;
     printf("%02x", (char *)v[0]);
@@ -28,7 +27,7 @@
 
 > ANSWER: 
 
-# What is the output of the following code snippet?
+## What is the output of the following code snippet?
 
     printf("%d", abs(-2147483648));
 
@@ -40,7 +39,7 @@
 
 > ANSWER: 
 
-# what does the expression, 1 > 0, evaluate to (on 64-bit) 
+## what does the expression, 1 > 0, evaluate to (on 64-bit) 
 
 1) 0
 2) 1
@@ -50,7 +49,7 @@
 
 > ANSWER: 
 
-# Which value does this code snippet print in x86 (32-bit)?
+## Which value does this code snippet print in x86 (32-bit)?
 
     printf("char=%d, int=%d, long=%d", \
       sizeof(char), sizeof(int), sizeof(long));
@@ -63,7 +62,7 @@
 
 > ANSWER: 
 
-# Which value does this code snippet print?
+## Which value does this code snippet print?
 
    unsigned int i = 0; 
    printf("%u", i--);
@@ -76,7 +75,7 @@
 
 > ANSWER: 
 
-# What is the output of the following program?
+## What is the output of the following program?
 
     int main () 
     {
@@ -97,7 +96,7 @@
 
 > ANSWER: 
 
-# What's the value of NULL?
+## What's the value of NULL?
 
 1) 0xffffffff
 2) 0x11111111
@@ -107,7 +106,7 @@
 
 > ANSWER: 
 
-# What is the output of the following program (32-bit)?
+## What is the output of the following program (32-bit)?
 
     main() {
       int x[5];
@@ -125,7 +124,7 @@
 > ANSWER: 3 = 0x7fffdfbf7f00
 > ANSWER: 4 = 0x7fffdfbf7f14
 
-# Where does the string, "hello world", reside?
+## Where does the string, "hello world", reside?
 
     main() {
       const char *str = "hello world";
@@ -140,7 +139,7 @@
 
 > ANSWER: 
 
-# Where does the variable 'str' reside?
+## Where does the variable 'str' reside?
 
     main() {
       const char *str = "hello world";
@@ -155,7 +154,7 @@
 
 > ANSWER: 
 
-# Where does the function 'main' locate?
+## Where does the function 'main' locate?
 
     main() {
       const char *str = "hello world";
@@ -170,7 +169,7 @@
 
 > ANSWER: 
 
-# Where does the arga locate relative to func's ebp (32-bit)?
+## Where does the arga locate relative to func's ebp (32-bit)?
 
     func(arga, argb, argc, Argo);
 
@@ -182,7 +181,7 @@
 
 > ANSWER: 
 
-# What is the output of the following program?
+## What is the output of the following program?
 
     main() {
       char array[] = {1, 2, 3, 4, 5};
@@ -198,7 +197,7 @@
 
 > ANSWER: 
 
-# What is the output of the following program?
+## What is the output of the following program?
 
     #define PTXSHIFT 12
     #define PTX(va)  (((uint)(va) >> PTXSHIFT) & 0x3FF)
@@ -213,7 +212,7 @@
 
 > ANSWER: 
 
-# What is the output of the following program?
+## What is the output of the following program?
 
     #define PGSIZE          4096
     #define CONVERT(sz)     (((sz)+PGSIZE-1) & ~(PGSIZE-1))
@@ -228,7 +227,7 @@
 
 > ANSWER: 
 
-# What is the correct usage of this macro?
+## What is the correct usage of this macro?
 
     #define ASSERT(a, b) do { switch (0) case 0: case (a): ; } while (0)
 
@@ -240,7 +239,7 @@
 
 > ANSWER: 
 
-# what does the expression, -1U > 0, evaluate to (x86)?
+## what does the expression, -1U > 0, evaluate to (x86)?
 
 1) 1
 2) 0
