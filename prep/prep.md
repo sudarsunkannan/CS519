@@ -1,5 +1,7 @@
 # CS 519 - C Prep Quiz (Submit as Homework 0)  			
-## Name: 		NetID: 	
+###  Name: 		
+###  NetID: 	
+
 
 ## What is the output of the following code snippet?
 
@@ -122,7 +124,7 @@
 
 > ANSWER: 2 = 			\
 > ANSWER: 3 = 			\
-> ANSWER: 4 = 			\
+> ANSWER: 4 = 			
 
 ## Where does the string, "hello world", reside?
 
