@@ -39,7 +39,7 @@
 
 > ANSWER: 
 
-## what does the expression, 1 > 0, evaluate to (on 64-bit) 
+## What does the expression, 1 > 0, evaluate to (on 64-bit) 
 
 1) 0
 2) 1
@@ -239,7 +239,7 @@
 
 > ANSWER: 
 
-## what does the expression, -1U > 0, evaluate to (x86)?
+## What does the expression, -1U > 0, evaluate to (x86)?
 
 1) 1
 2) 0
@@ -250,5 +250,4 @@
 > ANSWER: 
 
 
-
-### Source: Professor Taesoo Kim's CS 3210 course
+*Source: Professor Taesoo Kim's CS 3210 course*
