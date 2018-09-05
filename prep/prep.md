@@ -1,6 +1,7 @@
 # CS 519 - C Prep Quiz (Submit as Homework 0)  			
-###  Name: 		
-###  NetID: 	
+
+Name:               
+NetID: 	
 
 
 ## What is the output of the following code snippet?
