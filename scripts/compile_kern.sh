@@ -1,14 +1,8 @@
 #!/bin/bash
 set -x
 
+#If current mounted, unmount
 sudo umount $MOUNT_DIR
-
-#Get the 4.17 kernel
-#sudo apt-get update
-#sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc
-wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.17.tar.xz
-tar xf linux-4.17.tar.xz
-cd linux-4.17
 
 #Compile the kernel
 cd $KERN_SRC
@@ -31,7 +25,7 @@ sudo make install
       exit 1
    fi
 
-sudo cp ./arch/x86/boot/bzImage /boot/vmlinuz-$y
-sudo cp System.map /boot/System.map-$y
-sudo cp .config /boot/config-$y
-sudo update-initramfs -c -k $y
+sudo cp ./arch/x86/boot/bzImage $KERNEL/vmlinuz-$y
+sudo cp System.map $KERNEL/System.map-$y
+sudo cp .config $KERNEL/config-$y
+#sudo update-initramfs -c -k $y

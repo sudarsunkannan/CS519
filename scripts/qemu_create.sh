@@ -27,8 +27,12 @@ cat /etc/os-release
 #Set family name 
 sudo debootstrap --arch amd64 $OS_RELEASE_NAME  $MOUNT_DIR
 
+
+#Unmount
+sudo umount $MOUNT_DIR
+
 #Chroot and Now install all your required packages; lets start with vim and build_esstentials.
-sudo chroot $MOUNT_DIR && sudo apt-get install vim && sudo apt-get install build-essential && sudo apt-get install ssh
+#sudo chroot $MOUNT_DIR && sudo apt-get install vim && sudo apt-get install build-essential && sudo apt-get install ssh
 
 #You are all set. Now unmount your image file from the directory.
 exit
