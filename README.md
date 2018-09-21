@@ -67,6 +67,10 @@ This script will use the compiled 4.17 kernel to run the QEMU
 $BASE/scripts/run_qemu.sh
 ```
 
+### Killing the QEMU process
+```
+$BASE/scripts/killqemu.sh
+```
 
 ### Copying data from your host to QEMU
 If you want to copy some data between your machine and QEMU disk image, then use the following script for convenience
@@ -75,10 +79,6 @@ This scripts copies directories/files from your host machine to QEMU's root fold
 $BASE/scripts/copy_data_to_qemu.sh FULL_PATH_OF_DIRECTORY_TO_COPY
 ```
 
-### Killing the QEMU process
-```
-$BASE/scripts/killqemu.sh
-```
 
 
 
