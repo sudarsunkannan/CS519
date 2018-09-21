@@ -1,4 +1,18 @@
-# QEMU SETUP AND KERNEL HACKING
+# QEMU setup for kernel hacking.
+
+QEMU enables you to run a virtual machine either on a bare-metal OS or inside another virtual machine. 
+More details of QEMU can be found here (https://www.qemu.org/).
+
+The instructions and scripts below helps you to get started with a compiling a custom kernel and running a 
+QEMU virtual machine using the compiled kernel.
+
+For this semester's class, we will use Linux 4.17.
+
+### Note:  
+
+While the following  instructions to compile a custom kernel for QEMU will not affect or overwrite the original kernel of your system/laptop in which you are running, it is your responsibility to make sure you understand each of the script commands and know what you are doing. The kernels are compiled and written to the project directory rather than the "boot" folder.
+
+You are more than welcome to use your own custom kernel compilation methods and running a QEMU!
 
 ### Installing Git 
 ```
