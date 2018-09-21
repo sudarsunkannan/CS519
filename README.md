@@ -9,7 +9,7 @@ cd AdvOS
 
 ### Set environmental variables
 ```
-$BASE/source scripts/setvars.sh "trusty"
+source scripts/setvars.sh "trusty"
 ```
 
 ### Getting Kernel Source
