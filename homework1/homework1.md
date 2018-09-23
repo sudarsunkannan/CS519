@@ -35,13 +35,13 @@ confirming that the new system is getting invoked inside the kernel.
 ## PART 2
 ---------
 In the second part, we will study the cost of page fault. 
-Remember that Linux OS allocates pages **on-demand** -- first time a page
-is accessed (touched) after allocation. First, you will allocate a large 2GB memory-mapped 
+Remember that Linux OS allocates pages **on demand** (the first time a page
+is accessed (or touched) after allocation). First, you will allocate a large 2GB memory-mapped 
 region which is also page-aligned. Next, you will touch (write) the first byte of each 
 page sequentially and measure the avergage cost of accessing a page (i.e., page fault cost).
 
-### Note: For allocating memory-mapped region, you can use `mmap' 
-system call that allocates page-aligned memory. When using `mmap()' call, you should 
+### Note: For allocating memory-mapped region 
+Use `mmap' system call that allocates page-aligned memory. When using `mmap()' call, you should 
 map an anonymous memory and not a file backed memory. See the following link for 
 more details about how to allocate anonymous memory.
 
