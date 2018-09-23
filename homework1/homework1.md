@@ -41,7 +41,7 @@ region which is also page-aligned. Next, you will touch (write) the first byte o
 page sequentially and measure the avergage cost of accessing a page (i.e., page fault cost).
 
 ### Note: For allocating memory-mapped region 
-Use `mmap' system call that allocates page-aligned memory. When using `mmap()' call, you should 
+Use `mmap()` system call that allocates page-aligned memory. When using `mmap()' call, you should 
 map an anonymous memory and not a file backed memory. See the following link for 
 more details about how to allocate anonymous memory.
 
