@@ -23,9 +23,7 @@ file. Some pointers about how to add a system call to the OS are below and there
 thousands of other references.
 
 [Ref 1](https://shanetully.com/2014/04/adding-a-syscall-to-linux-3-14/) 
-[Ref 1](https://shanetully.com/2014/04/adding-a-syscall-to-linux-3-14/) 
-
-[Ref 2] (https://macboypro.wordpress.com/2009/05/15/adding-a-custom-system-call-to-the-linux-os/)
+[Ref 2](https://macboypro.wordpress.com/2009/05/15/adding-a-custom-system-call-to-the-linux-os/) 
 
 Once you have added a system call, measure the cost of invoking a system call
 from userspace by invoking the system call 100K times and measuring the average
