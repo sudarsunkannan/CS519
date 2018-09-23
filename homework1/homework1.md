@@ -14,7 +14,7 @@ Linux 4.17 kernel source code can be found here
 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/?h=linux-4.17.y
 ```
 
-## PART 1
+ PART 1
 ---------
 The first step would be to write a simple benchmark to measure the
 cost of the system call; you will add a new dummy system call
@@ -32,7 +32,7 @@ NOTE: Make sure that your system call is getting called by adding a **printk()**
 within your dummy system call. You should remove the print statement after
 confirming that the new system is getting invoked inside the kernel.
 
-## PART 2
+ PART 2
 ---------
 In the second part, we will study the cost of page fault. 
 Remember that Linux OS allocates pages **on demand** (the first time a page
@@ -40,7 +40,7 @@ is accessed (or touched) after allocation). First, you will allocate a large 2GB
 region which is also page-aligned. Next, you will touch (write) the first byte of each 
 page sequentially and measure the avergage cost of accessing a page (i.e., page fault cost).
 
-### Note: For allocating memory-mapped region 
+#### Note: For allocating memory-mapped region 
 Use `mmap()` system call that allocates page-aligned memory. When using `mmap()`, you should 
 map an anonymous memory and not a file backed memory. See the following link for 
 more details how to allocate anonymous memory.
@@ -48,7 +48,7 @@ more details how to allocate anonymous memory.
 [Reference 1](http://man7.org/linux/man-pages/man2/mmap.2.html)
 [Reference 2](http://man7.org/tlpi/code/online/dist/mmap/anon_mmap.c.html)
 
-## PART 3
+PART 3
 ---------
 
 The part 3 of homework is an attempt to reduce the cost of page fault handling
@@ -71,7 +71,7 @@ entry (PTE), and (3) adds the PTE to the page table.
 
 We will walk through this function in the class.
 
-## Resources
+Resources
 -------------
 In this class, we will use the QEMU-based virtual machine to test the modified
 OS. QEMU VMs run either on a bare-metal OS or even inside another virtual
@@ -85,13 +85,13 @@ OS using QEMU. Detailed step-by-step instructions can be found here.
 https://github.com/SudarsunKannan/CS519
 ```
 
-### Computing Resource
+Computing Resource
 ---------------------
 If you need access to a development environment and cannot use your laptop, 
 please send me an email (sudarsun.kannan@cs.rutgers.edu).
 
 
-## Starting Early
+ Starting Early
 -----------------
 This a significant-but-essential homework for understanding the basics of OS
 virtual memory. Please start working on this homework early. If you have
