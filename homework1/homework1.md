@@ -28,7 +28,7 @@ Once you have added a system call, measure the cost of invoking a system call
 from userspace by invoking the system call few hundred times and measuring the average
 latency.
 
-NOTE: Make sure that your system call is getting called by adding a `printk()'
+NOTE: Make sure that your system call is getting called by adding a **printk()**
 within your dummy system call. You should remove the print statement after
 confirming that the new system is getting invoked inside the kernel.
 
