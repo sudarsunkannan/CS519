@@ -18,12 +18,12 @@ https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/?h=linux-4
 ---------
 The first step would be to write a simple benchmark to measure the
 cost of the system call; you will add a new dummy system call
-(hello_kernel) to your OS in the Linux kernel's [mm/mmap.c]: https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/mm/mmap.c?h=linux-4.17.y 
+(hello_kernel) to your OS in the Linux kernel's [mm/mmap.c](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/mm/mmap.c?h=linux-4.17.y)
 file. Some pointers about how to add a system call to the OS are below and there are 
 thousands of other references.
 
-[Ref 1](https://shanetully.com/2014/04/adding-a-syscall-to-linux-3-14/) 
-[Ref 2](https://macboypro.wordpress.com/2009/05/15/adding-a-custom-system-call-to-the-linux-os/) 
+[Reference 1](https://shanetully.com/2014/04/adding-a-syscall-to-linux-3-14/) 
+[Reference 2](https://macboypro.wordpress.com/2009/05/15/adding-a-custom-system-call-to-the-linux-os/) 
 
 Once you have added a system call, measure the cost of invoking a system call
 from userspace by invoking the system call 100K times and measuring the average
@@ -46,8 +46,8 @@ system call that allocates page-aligned memory. When using `mmap()' call, you sh
 map an anonymous memory and not a file backed memory. See the following link for 
 more details about how to allocate anonymous memory.
 
-[Ref 1] (http://man7.org/linux/man-pages/man2/mmap.2.html)
-[Ref 2] (http://man7.org/tlpi/code/online/dist/mmap/anon_mmap.c.html)
+[Reference 1](http://man7.org/linux/man-pages/man2/mmap.2.html)
+[Reference 2](http://man7.org/tlpi/code/online/dist/mmap/anon_mmap.c.html)
 
 ## PART 3
 ---------
