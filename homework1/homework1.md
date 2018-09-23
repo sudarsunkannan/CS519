@@ -35,7 +35,7 @@ confirming that the new system is getting invoked inside the kernel.
 ## PART 2
 ---------
 In the second part, we will study the cost of page fault. 
-Remember that the OS allocates pages on-demand -- first time a page
+Remember that Linux OS allocates pages **on-demand** -- first time a page
 is accessed (touched) after allocation. First, you will allocate a large 2GB memory-mapped 
 region which is also page-aligned. Next, you will touch (write) the first byte of each 
 page sequentially and measure the avergage cost of accessing a page (i.e., page fault cost).
