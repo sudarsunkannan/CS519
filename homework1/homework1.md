@@ -25,7 +25,7 @@ file. A couple of references below show how to add a new system call; there are 
 [Reference 2](https://macboypro.wordpress.com/2009/05/15/adding-a-custom-system-call-to-the-linux-os/) 
 
 Once you have added a system call, measure the cost of invoking a system call
-from userspace by invoking the system call 100K times and measuring the average
+from userspace by invoking the system call few hundred times and measuring the average
 latency.
 
 NOTE: Make sure that your system call is getting called by adding a `printk()'
