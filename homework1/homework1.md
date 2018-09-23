@@ -18,7 +18,7 @@ https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/?h=linux-4
 ---------
 The first step would be to write a simple benchmark to measure the
 cost of the system call; you will add a new dummy system call
-(hello_kernel) to your OS in the Linux kernel's [mm/mmap.c] (https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/mm/mmap.c?h=linux-4.17.y) 
+(hello_kernel) to your OS in the Linux kernel's (https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/mm/mmap.c?h=linux-4.17.y mm/mmap.c) 
 file. Somw pointers about how to add a system call to the OS are below and there are 
 thousands of other references.
 
