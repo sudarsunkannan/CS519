@@ -53,7 +53,7 @@ more details how to allocate anonymous memory.
 
 The part 3 of homework is an attempt to reduce the cost of page fault handling
 cost. Every time a page fault occurs, instead of allocating only one page, you
-are required to allocate 2 or more pages after a page fault. For example, one
+are required to allocate two or more pages after a page fault. For example, one
 page for the actual faulting address (say, addr X) and the next page (say, addr
 X + 4096). For this, you will modify the OS virtual memory fault handler.
 
@@ -73,14 +73,13 @@ We will walk through this function in the class.
 
 ## Resources
 -------------
-In this class, we hacking the OS and testing the OS with a QEMU emulator. 
-A QEMU is a virtual machine that runs a process either on a baremetal OS 
-or even inside another virtual machine. More details about QEMU can be
-obtained [here] (https://www.qemu.org/)
+In this class, we will use the QEMU-based virtual machine to test the modified
+OS. QEMU VMs run either on a bare-metal OS or even inside another virtual
+machine. More details on QEMU can be obtained [here] (https://www.qemu.org/).
 
-For students new to QEMU or hacking kernel, we have created a set of 
-instructions about how to compile a custom kernel (OS), how to run the 
-OS using QEMU. Detailed step-by-step instructions can be found here. 
+For students new to QEMU or hacking kernel, we have created a set of
+instructions about how to compile a custom kernel (OS) and how to run the
+OS using QEMU. Detailed step-by-step instructions can be found here.
 
 ```
 https://github.com/SudarsunKannan/CS519
