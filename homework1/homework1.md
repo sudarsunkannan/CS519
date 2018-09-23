@@ -43,7 +43,7 @@ page sequentially and measure the avergage cost of accessing a page (i.e., page 
 ### Note: For allocating memory-mapped region 
 Use `mmap()` system call that allocates page-aligned memory. When using `mmap()`, you should 
 map an anonymous memory and not a file backed memory. See the following link for 
-more details about how to allocate anonymous memory.
+more details how to allocate anonymous memory.
 
 [Reference 1](http://man7.org/linux/man-pages/man2/mmap.2.html)
 [Reference 2](http://man7.org/tlpi/code/online/dist/mmap/anon_mmap.c.html)
