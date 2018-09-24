@@ -1,5 +1,6 @@
-# Semester Project - Proposal (15% of the Semester Project Points)
+# Semester Project - Proposal 
 ### Due: October 3rd, 2018, 11:00pm
+#### (15% of the total Project points)
 
 As discussed in the class, submit a 1-2 page proposal for the semester project.
 While I have discussed ideas with most students, if you do not have an idea yet,
