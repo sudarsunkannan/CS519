@@ -93,7 +93,9 @@ This scripts copies directories/files from your host machine to QEMU's root fold
 $BASE/scripts/copy_data_to_qemu.sh FULL_PATH_OF_DIRECTORY_TO_COPY
 ```
 
+### Kernel error debugging
 
+https://opensourceforu.com/2011/01/understanding-a-kernel-oops/
 
 
 
