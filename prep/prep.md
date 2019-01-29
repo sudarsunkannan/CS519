@@ -1,8 +1,10 @@
-# CS 519 - C Prep Quiz (Submit as Homework 0)  			
+# CS 416 - Self Assesment Prep Quiz (Non-graded assignment)  	
 
 Name:               
 NetID: 	
+Due date: 02/04/2019 (No hard deadline)
 
+#### Please solve manually with pen and paper.
 
 ## What is the output of the following code snippet?
 
