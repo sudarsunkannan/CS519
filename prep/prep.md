@@ -242,15 +242,4 @@ NetID:
 
 > ANSWER: 
 
-## What does the expression, -1U > 0, evaluate to (x86)?
-
-1) 1
-2) 0
-3) -1
-4) undefined
-5) depending on architecture
-
-> ANSWER: 
-
-
-*Source: Professor Taesoo Kim's CS 3210 course*
+*Source: Derived and modified from Professor Taesoo Kim's CS 3210 course*
