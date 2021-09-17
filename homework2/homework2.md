@@ -1,6 +1,6 @@
 # Homework 1 - System Calls and Virtual Memory
 ### Due: October 8th, 2021, 11:55pm
-##### GitHub page: https://github.com/SudarsunKannan/CS519/blob/master/homework2
+
 In the second homework, we will explore the cost of system calls and
 the page fault cost. The homework will consist of three parts: part 1
 and part 2 will require you to develop a benchmark to measure the cost
