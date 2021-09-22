@@ -44,6 +44,24 @@ From the source directory set the environment variables.
 trusty specifies the host systems linux version/codename; pass your own OS version name.
 ```
 source scripts/setvars.sh "trusty"   
+```
+
+Then generate a configuration file
+```
+cd linux-4.17
+sudo make x86_64_defconfig
+```
+
+Time to switch off SELINUX as it could cause issues in some versions. Open the .config file 
+and comment selinux
+```
+vim .config
+#CONFIG_SECURITY_SELINUX=y
+```
+
+Now, let's run the compilation script. If you are prompted for disabling SELINUX, just hit enter.
+```
+cd ...
 $BASE/scripts/compile_kern.sh
 ```
 
