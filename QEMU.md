@@ -41,7 +41,9 @@ sudo apt-get install -y build-essential cmake libssl-dev bison flex
 
 ### Compiling and launching QEMU 
 From the source directory set the environment variables.
-trusty specifies the host systems linux version/codename; pass your own OS version name.
+trusty specifies the host system's linux version/codename; pass your own OS version name using the following command
+```
+sudo lsb_release -a
 ```
 source scripts/setvars.sh "trusty"   
 ```
