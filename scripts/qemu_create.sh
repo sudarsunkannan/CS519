@@ -2,7 +2,7 @@
 set -x
 
 #Install Quemu
-sudo apt-get install qemu
+sudo apt-get install qemu qemu-system
 
 #Now create a disk for your virtual machine 
 #for 16GB

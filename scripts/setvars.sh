@@ -10,8 +10,8 @@ export KERNEL=$BASE/KERNEL
 #CPU parallelism
 export PARA="-j8"
 export VER="4.17.0"
-export QEMU_IMG_FILE=$PWD/qemu-image.img
-export MOUNT_DIR=$PWD/mountdir
+export QEMU_IMG_FILE=$BASE/qemu-image.img
+export MOUNT_DIR=$BASE/mountdir
 export QEMUMEM="4096M"
 mkdir $KERNEL
 
